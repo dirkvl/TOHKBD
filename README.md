@@ -20,7 +20,7 @@ With an [open application](https://twitter.com/andrewzhilin/status/4934857147983
 
 In the cover that snap onto the phone there is very little going on. There is a PCB that connects to all [6 pogo-pins](https://jolla.com/the-other-half-developer-kit/). Connecting to these pins is a [voltage regulator](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/MCP1703.jpg) and an EEPROM. 
 
-![EEPROM](https://github.com/dirkvl/TOHKBD/raw/master/Eagle/pics/EEPROM.jpg)
+![EEPROM](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/EEPROM.JPG)
 
 This is a memory module that contains a [Vendor and Product ID](https://wiki.merproject.org/wiki/The_other_half). The phone reads this EEPROM when it connects to start the appropriate driver.
 
@@ -32,23 +32,23 @@ With two contact pads (8mm PCBs) the keyboard piece can make contact, all 6 pins
 
 In the keyboard a little more is going on. The main driver is the [TCA8424](http://www.ti.com/product/TCA8424/description).
 
-![TCA8424](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/TCA8424.jpg)
+![TCA8424](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/TCA8424.JPG)
 
 This connects to the keyboard matrix. It waits untill a key is pressed, then starts scanning and notifies the phone via the Interrupt pin that is has data to be read.
 
-![Keyboard matrix](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/matrix.jpg)
+![Keyboard matrix](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/matrix.JPG)
 
 There is an additional EEMPROM in the keyboard piece, containing the keypad layout version.
 
-![Keyboard EEPROM](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/EEPROM2.jpg)
+![Keyboard EEPROM](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/EEPROM2.JPG)
 
 The backlight consists of 10 x 0402 LEDs, controlled with a [n-channel MOSFET](http://en.wikipedia.org/wiki/MOSFET) by the TCA8424.
 
-![Backlight](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/backlight.jpg)
+![Backlight](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/backlight.JPG)
 
 The keyboard detection is done with a PNP transistor.
 
-![Backlight](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/detection.jpg)
+![Backlight](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/detection.JPG)
 
 ```
 1. Phone detects TOH-cover
