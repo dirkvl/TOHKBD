@@ -20,7 +20,7 @@ With an [open application](https://twitter.com/andrewzhilin/status/4934857147983
 
 In the cover that snap onto the phone there is very little going on. There is a PCB that connects to all [6 pogo-pins](https://jolla.com/the-other-half-developer-kit/). Connecting to these pins is a [voltage regulator](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/MCP1703.jpg) and an EEPROM. 
 
-![EEPROM](https://github.com/dirkvl/TOHKBD/tree/master/Eagle/pics/EEPROM.jpg)
+![EEPROM](https://github.com/dirkvl/TOHKBD/raw/master/Eagle/pics/EEPROM.jpg)
 
 This is a memory module that contains a [Vendor and Product ID](https://wiki.merproject.org/wiki/The_other_half). The phone reads this EEPROM when it connects to start the appropriate driver.
 
