@@ -10,7 +10,7 @@ In [June 2013](http://talk.maemo.org/showthread.php?t=91535) one idiot thought h
 
 After this project ended there was a period of other Funky-TOH development, with during that time a lot of requests of making more keyboards. Little did they knew that in the background the imfamous 'dirkvl' together with his trusty 'kimmoli' were cooking up a new version. A better one. The One.
 
-With an [open application](https://twitter.com/andrewzhilin/status/493485714798313472) on the hashweb/tweetspace Andrew joined the team and provid himself to be the missing piece of the three piece puzzle. With a complete team, a solid design and a strong backing from the rest of the community, the TOHKBD-team set out onto the open crowdfunding see. [And struck gold.](https://www.kickstarter.com/projects/2028347278/tohkbd-the-other-half-keyboard-for-your-jolla)
+With an [open application](https://twitter.com/andrewzhilin/status/493485714798313472) on the hashweb/tweetspace Andrew joined the team and provid himself to be the missing piece of the three piece puzzle. With a complete team, a solid design and a strong backing from the rest of the community, the TOHKBD-team set out onto the open crowdfunding sea. [And struck gold.](https://www.kickstarter.com/projects/2028347278/tohkbd-the-other-half-keyboard-for-your-jolla)
 
 ## Hardware
 
@@ -30,15 +30,15 @@ With two contact pads (8mm PCBs) the keyboard piece can make contact, all 6 pins
 
 #### Keyboard piece
 
-In the keyboard a little more is going on. The main driver is the [TCA8424](http://www.ti.com/product/TCA8424/description).
+In the keyboard a little more is going on. The main driver is the [TCA8424](http://www.ti.com/product/TCA8424/description). It runs on 1.8V I2C lines and has three notification LEDs connected, where the TCA8424 acts as an open drain. The LEDs have some probing pads for testing during production.
 
 ![TCA8424](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/TCA8424.JPG)
 
-This connects to the keyboard matrix. It waits untill a key is pressed, then starts scanning and notifies the phone via the Interrupt pin that is has data to be read.
+This connects to the keyboard matrix. It waits untill a key is pressed, then starts scanning and notifies the phone via the INT pin that is has data to be read.
 
 ![Keyboard matrix](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/matrix.JPG)
 
-There is an additional EEMPROM in the keyboard piece, containing the keypad layout version.
+There is an additional EEMPROM in the keyboard piece, containing the keypad layout version. The A0 address pin is pulled high to make it shift one address place and not conflict with the EEPROM in the TOH-cover.
 
 ![Keyboard EEPROM](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/pics/EEPROM2.JPG)
 
