@@ -69,7 +69,10 @@ To be made, but no surprises to be expected
 
 ### PCBs
 
+Made in Eagle Cadsoft. 
+
 [Cover PCB](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/Cover.rar)
+
 [Keyboard PCB](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/Keyboard.rar)
 
 ### SMD assembly
