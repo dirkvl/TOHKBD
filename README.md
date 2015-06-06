@@ -62,9 +62,17 @@ The keyboard detection is done with a PNP transistor.
 8b. If the TCA8424 is not present, something is wrong and the phone goes back to step 3
 ```
 
-SMD parts list:
+SMD part list:
 ```
-To be made, but no surprises to be expected
+TCA8424 - QFN40
+CAT24C02 - DFN6
+IRLML5203 - SOT-3
+10K pullup/downs - 0603
+10R led resistors - 0603
+MCP1700 - SOT-3
+0.1uF 6V capacitors - 0603
+3.15V highbright leds - 0402
+Pogo pins - round pad and through-hole
 ```
 
 ### PCBs
@@ -85,7 +93,7 @@ Next a pick&place machine puts the components in the right place on the PCB. I u
 
 ![Pick & Place](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Machines/pickplace.jpg)
 
-Because the accuracy of the machine it not astronomical, the allignment is checked and adjusted by hand if neccessary. 
+Because the accuracy of the machine it not astronomical, the allignment of every component is checked and adjusted by hand if neccessary. 
 
 The solderpaste is melted in a reflow oven. (T-962A)
 
@@ -95,11 +103,18 @@ Lastly the PCB is tested manually and all shorts are corrected with a soldering 
 
 ### Frames
 
-Info about 3d printing, to be made
+The frames are 3D printed (using a process called lasersintering) by Shapeways. If you want to change the colour of your TOHKBD, you can order one of these parts from them:
+
+Cover link
+Keyboard link
 
 ### Magnet system
 
-With locations etc
+The keyboard part uses magnets to attach and detach in all positions. 
+
+The magnets used are the [D61-N52](https://www.kjmagnetics.com/proddetail.asp?prod=D61-N52) and [D62-N52](https://www.kjmagnetics.com/proddetail.asp?prod=D62-N52) from KJMagnetics.
+
+<insert picture with dimensions>
 
 ### Keypad
 
@@ -111,7 +126,7 @@ designs, files etc
 
 ### Backplate
 
-Dimensions
+<Dimensions>
 
 ## Software
 
