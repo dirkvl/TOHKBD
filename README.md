@@ -69,7 +69,7 @@ To be made, but no surprises to be expected
 
 ### PCBs
 
-Made in Eagle Cadsoft. 
+Made in Eagle Cadsoft. The gerber files are linked below:
 
 [Cover PCB](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Eagle/Cover.rar)
 
@@ -77,7 +77,21 @@ Made in Eagle Cadsoft.
 
 ### SMD assembly
 
-P&P etc
+The first step in SMD assembly is applying solder past on the PCB with a stencil printer.
+
+![Stencil printer](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Machines/stencilprinter.jpg)
+
+Next a pick&place machine puts the components in the right place on the PCB. I use a TM220A.
+
+![Pick & Place](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Machines/pickplace.jpg)
+
+Because the accuracy of the machine it not astronomical, the allignment is checked and adjusted by hand if neccessary. 
+
+The solderpaste is melted in a reflow oven. (T-962A)
+
+![T962A](https://raw.githubusercontent.com/dirkvl/TOHKBD/master/Machines/oven.jpg)
+
+Lastly the PCB is tested manually and all shorts are corrected with a soldering iron.
 
 ### Frames
 

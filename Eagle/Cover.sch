@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4200,15 +4200,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
-<smd name="P$1" x="1.15" y="0" dx="0.25" dy="0.75" layer="1" rot="R90"/>
-<smd name="P$2" x="1.15" y="-0.65" dx="0.25" dy="0.75" layer="1" rot="R90"/>
-<smd name="VOUT" x="1.15" y="0.65" dx="0.25" dy="0.75" layer="1" rot="R90"/>
-<smd name="VIN" x="-1.15" y="0.65" dx="0.25" dy="0.75" layer="1" rot="R90"/>
-<smd name="GND" x="-1.15" y="-0.65" dx="0.25" dy="0.75" layer="1" rot="R90"/>
-<smd name="HEATSINK" x="0" y="0" dx="1" dy="1.6" layer="1" rot="R180"/>
+<smd name="P$1" x="1.4" y="0" dx="0.25" dy="1.25" layer="1" rot="R90"/>
+<smd name="P$2" x="1.4" y="-0.65" dx="0.25" dy="1.25" layer="1" rot="R90"/>
+<smd name="VOUT" x="1.4" y="0.65" dx="0.25" dy="1.25" layer="1" rot="R90"/>
+<smd name="VIN" x="-1.4" y="0.65" dx="0.25" dy="1.25" layer="1" rot="R90"/>
+<smd name="GND" x="-1.4" y="-0.65" dx="0.25" dy="1.25" layer="1" rot="R90"/>
+<smd name="HEATSINK" x="0" y="0" dx="1" dy="1.6" layer="1" rot="R180" stop="no" cream="no"/>
 <circle x="-1.25" y="1.35" radius="0.25" width="0.127" layer="21"/>
 <circle x="-1.25" y="1.35" radius="0.180275" width="0.127" layer="21"/>
 <circle x="-1.25" y="1.35" radius="0.070709375" width="0.127" layer="21"/>
+<rectangle x1="-0.25" y1="-0.5" x2="0.25" y2="0.5" layer="31"/>
+<rectangle x1="-0.25" y1="-0.5" x2="0.25" y2="0.5" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -4257,7 +4259,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SDA" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="SCL" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="INT" library="testpad" deviceset="TP" device="TP20SQ"/>
-<part name="V33" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="3V3" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="GND2" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="SDA2" library="testpad" deviceset="TP" device="TP20SQ" value="SDA"/>
 <part name="SCL2" library="testpad" deviceset="TP" device="TP20SQ"/>
@@ -4265,7 +4267,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="V33_2" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="U$1" library="cat24" deviceset="CAT24" device=""/>
 <part name="V5_OOUT" library="testpad" deviceset="TP" device="TP20SQ"/>
-<part name="V5" library="testpad" deviceset="TP" device="TP20SQ" value="V5"/>
+<part name="5V" library="testpad" deviceset="TP" device="TP20SQ" value="V5"/>
 <part name="GND1" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="SDA1" library="testpad" deviceset="TP" device="TP20SQ" value="SDA"/>
 <part name="SCL1" library="testpad" deviceset="TP" device="TP20SQ"/>
@@ -4297,7 +4299,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="-64.77" y="31.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="-62.23" y="29.21" size="1.778" layer="97"/>
 </instance>
-<instance part="V33" gate="G$1" x="-58.42" y="30.48" smashed="yes">
+<instance part="3V3" gate="G$1" x="-58.42" y="30.48" smashed="yes">
 <attribute name="NAME" x="-59.69" y="31.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="-57.15" y="29.21" size="1.778" layer="97"/>
 </instance>
@@ -4326,7 +4328,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="-54.61" y="31.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="-52.07" y="29.21" size="1.778" layer="97"/>
 </instance>
-<instance part="V5" gate="G$1" x="-53.34" y="12.7" smashed="yes" rot="R180">
+<instance part="5V" gate="G$1" x="-53.34" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="-52.07" y="11.43" size="1.778" layer="95" rot="R270"/>
 <attribute name="TP_SIGNAL_NAME" x="-54.61" y="13.97" size="1.778" layer="97" rot="R180"/>
 </instance>
@@ -4463,7 +4465,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="V33" gate="G$1" pin="TP"/>
+<pinref part="3V3" gate="G$1" pin="TP"/>
 <label x="-58.42" y="20.32" size="1.778" layer="95" rot="R90"/>
 <pinref part="V33_2" gate="G$1" pin="TP"/>
 <wire x1="-58.42" y1="27.94" x2="-58.42" y2="15.24" width="0.1524" layer="91"/>
@@ -4487,7 +4489,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="V5_OOUT" gate="G$1" pin="TP"/>
 <label x="-53.34" y="20.32" size="1.778" layer="95" rot="R90"/>
-<pinref part="V5" gate="G$1" pin="TP"/>
+<pinref part="5V" gate="G$1" pin="TP"/>
 <wire x1="-53.34" y1="27.94" x2="-53.34" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="V1" gate="G$1" pin="TP"/>
 <wire x1="-55.88" y1="15.24" x2="-53.34" y2="15.24" width="0.1524" layer="91"/>
