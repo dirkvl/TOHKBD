@@ -72,7 +72,7 @@ IRLML5203 - SOT-3
 MCP1700 - SOT-3
 0.1uF 6V capacitors - 0603
 3.15V highbright leds - 0402
-Pogo pins - round pad and through-hole
+Pogo pins - Mill-Max 0906-0-15-20-76-14-11-0 (Mouser P/N: 575-906015)
 ```
 
 ### PCBs
